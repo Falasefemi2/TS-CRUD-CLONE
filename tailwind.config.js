@@ -34,6 +34,15 @@ export default {
           'sans-serif',
         ],
       },
+      backgroundColor: {
+        'black': 'var(--bg-black)',
+        'white': 'var(--white)'
+      },
+      textColor: {
+        'white': 'var(--white)',
+        'black': 'var(--bg-black)'
+      },
+      
     },
   },
   plugins: [],
