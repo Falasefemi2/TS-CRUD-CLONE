@@ -6,7 +6,8 @@
 :root {
   --bg-black: #0f0f0f;
   --white: #f8f8f8;
-  --nav-text: rgb(255, 255, 255)
+  --nav-text: rgb(255, 255, 255);
+  --border-color: rgba(39, 43, 45, 0.43);
 }
 
 body {
