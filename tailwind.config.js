@@ -40,7 +40,8 @@ export default {
       },
       textColor: {
         'white': 'var(--white)',
-        'black': 'var(--bg-black)'
+        'black': 'var(--bg-black)',
+        'nav-text': 'var(--nav-text)'
       },
       
     },

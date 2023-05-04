@@ -1,4 +1,4 @@
-type buttonProps = {
+interface buttonProps  {
     buttonText: string,
     onClick?: () => void,
     customClasses?: React.CSSProperties,
