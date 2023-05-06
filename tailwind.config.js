@@ -37,7 +37,7 @@ export default {
       backgroundColor: {
         'black': 'var(--bg-black)',
         'white': 'var(--white)',
-        'grey': 'var(--border-color)'
+        'grey': 'var(--border-color)',
       },
       textColor: {
         'white': 'var(--white)',
