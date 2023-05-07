@@ -38,7 +38,9 @@ export default {
         'black': 'var(--bg-black)',
         'white': 'var(--white)',
         'grey': 'var(--border-color)',
-        'white2': 'var(--nav-text)'
+        'white2': 'var(--nav-text)',
+        'black2': 'var(--phone-color)',
+
       },
       textColor: {
         'white': 'var(--white)',
