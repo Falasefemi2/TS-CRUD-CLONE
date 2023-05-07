@@ -38,6 +38,7 @@ export default {
         'black': 'var(--bg-black)',
         'white': 'var(--white)',
         'grey': 'var(--border-color)',
+        'white2': 'var(--nav-text)'
       },
       textColor: {
         'white': 'var(--white)',
