@@ -7,7 +7,7 @@ className?: React.CSSProperties,
 subText?: string
 }
 
-const ProductShowCase = ({text,anText, className, subText}: Props) => {
+const ProductShowCase = ({text,anText, subText}: Props) => {
   return (
     <>
     <div>
