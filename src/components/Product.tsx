@@ -1,8 +1,5 @@
 import { FC } from 'react';
 
-
-
-
 type Image = {
     src: string;
     alt: string;
