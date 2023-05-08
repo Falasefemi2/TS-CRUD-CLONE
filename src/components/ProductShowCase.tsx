@@ -4,7 +4,7 @@ type Props = {
 text: string,
 anText: string
 className?: React.CSSProperties,
-subText?: string
+subText: string
 }
 
 const ProductShowCase = ({text,anText, subText}: Props) => {
