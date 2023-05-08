@@ -11,6 +11,7 @@ const App = () => {
   useEffect(() => {
     if (window.innerWidth >= 768) {
       setBgImage("https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png")
+
     }
   }, []);
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <HeroSection />
       </section>
 
-      <section className="w-screen bg-[#0f0f0f] h-[450px] md:h-[800px] relative overflow-hidden bg-cover bg-right-top" style={{ backgroundImage: `url(${bgImage})` }}>
+      <section className="bg-[#0f0f0f] h-[450px] md:h-[800px] relative overflow-hidden bg-cover bg-right-top w-screen" style={{ backgroundImage: `url(${bgImage})` }}>
         <Product />
       </section>
 

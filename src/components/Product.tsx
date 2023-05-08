@@ -1,5 +1,7 @@
-import { FC } from 'react';
-import { motion } from 'framer-motion'
+import { FC, useRef, useEffect } from 'react';
+
+
+
 
 type Image = {
     src: string;
@@ -35,19 +37,23 @@ const images: Image[] = [
     }
 ];
 
-const Product: FC = () => {
-    return (
-        <motion.div className="min-h-[70%]"
-            initial={{ y: "100vh", opacity: 0, scale: 1 }}
-            animate={{ y: "100%", opacity: 1 }}
-            transition={{ duration: 0.4, ease: [0.39, 0.575, 0.565, 1] }}
 
+
+const Product: FC = () => {
+
+    return (
+        <div className="min-h-[70%]"
         >
             {images.map((image, index) => (
-                <img key={index} src={image.src} alt={image.alt} className={image.className} />
+                <img
+
+                    key={index} src={image.src} alt={image.alt} className={image.className} />
             ))}
-        </motion.div>
-    );
-};
+        </div>
+    )
+}
+
+
+
 
 export default Product;

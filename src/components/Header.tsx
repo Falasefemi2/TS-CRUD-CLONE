@@ -26,7 +26,7 @@ const Header = () => {
                         <span className="hamburger-inner"></span>
                     </span>
                 </button>
-                <div className={`${toggle ? ' translate-x-0' : 'translate-x-[100%]'} fixed top-0 left-0 w-full h-screen z-[1] p-8 flex-col bg-black text-left transition transform ease-in-out delay-0`}>
+                <div className={`${toggle ? ' translate-x-0' : 'translate-x-[100%]'} fixed top-0 left-0 w-full h-screen z-[1] p-8 flex-col bg-black text-left transition transform ease-in-out delay-0 overflow-hidden`}>
                     <div className="mt-[120px]">
                         <div className="p-[15px] relative bg-grey mb-5 border border-solid border-transparent rounded-[15px]">
                             <div className="py-2 px-0 relative">
