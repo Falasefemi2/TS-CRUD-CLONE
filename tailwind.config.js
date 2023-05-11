@@ -12,7 +12,8 @@ export default {
       'left-center': 'left center',
       'center-center': 'center center',
       'right-center': 'right center',
-      'cover': 'cover'
+      'cover': 'cover',
+      'right-top': 'right top'
     },
     boxShadow: {
       'bx': 'rgba(250, 250, 255, 0.16) 0px -5px 6px 0px inset, rgba(38, 37, 37, 0.24) 4px 6px 11px 1px inset'

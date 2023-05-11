@@ -56,7 +56,7 @@ const ScrollPage = () => {
     positions.current = scrollDatas.map((_, i) => {
       const ref = refs.current[i];
       if (ref.current) {
-        return ref.current.getBoundingClientRect().top + window.pageYOffset;
+        return ref.current.getBoundingClientRect().top + window.scrollY;
       }
       return 0;
     });
@@ -66,23 +66,23 @@ const ScrollPage = () => {
     scrollDatas.map(() => React.createRef())
   )
     return (
-        <>
+        <div className="flex flex-row">
             <div className="flex flex-col justify-end w-1/2">
                 {scrollDatas.map((screen, i) => (
                     <div ref={refs.current[i]} key={i} className="mb-[100px] mt-[250px]">
-                        <div className="text-[105px] font-bold leading-[105px] ">{screen.description}</div>
+                        <div className="mb-0 mt-0 text-[105px] font-bold leading-[105px]">{screen.description}</div>
                         <div className="text-[18px] font-semibold leading-[28px] max-w-[600px] mt-[52px]">{screen.subText}</div>
                     </div>
                 ))}
             </div>
             <div className="w-1/2 ml-[30px] flex justify-center relative">
-            <div className="sticky top-[180px] w-[350px] h-[600px] shadow-bx rounded-[46px] py-4 px-[14px]">
-                <div className="bg-black rounded-[36px] h-full flex justify-center overflow-hidden">
-                    <img src={scrollDatas[currentimg].img} alt=""  />
+            <div className="sticky top-[180px] w-[350px] h-[600px] shadow-bx rounded-[46px] py-4 px-[14px] transform translate-x-[30%] max-h-screen">
+                <div className="bg-black rounded-[36px] relative h-full flex md:justify-center overflow-hidden">
+                    <img src={scrollDatas[currentimg].img} alt="" className="w-[300px] object-contain"  />
                 </div>
             </div>
             </div>
-        </>
+        </div>
     )
 }
 

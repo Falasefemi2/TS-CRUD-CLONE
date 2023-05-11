@@ -1,7 +1,7 @@
 type buttonProps = {
     buttonText: string,
     onClick?: () => void,
-    customClass?: React.CSSProperties,
+    customClass?: string,
     prefix?: string
 }
 

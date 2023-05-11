@@ -6,6 +6,8 @@ import Product from "./components/Product"
 import ProductShowCase from "./components/ProductShowCase"
 import Brand from "./components/Brand"
 import ScrollPage from "./components/ScrollPage"
+import Rating from "./components/Rating"
+import MobileScroll from "./components/MobileScroll"
 
 
 
@@ -32,7 +34,7 @@ const App = () => {
         <HeroSection />
       </section>
 
-      <section className="bg-[#0f0f0f] h-[450px] md:h-[800px] relative overflow-hidden bg-cover bg-right-top w-screen" style={{ backgroundImage: `url(${bgImage})` }}>
+      <section className="bg-[#0f0f0f] h-[450px] md:h-[800px] relative overflow-hidden bg-cover md:bg-right-top w-screen" style={{ backgroundImage: `url(${bgImage})` }}>
         <Product />
       </section>
 
@@ -48,10 +50,19 @@ const App = () => {
         <ProductShowCase text="we take your money matters seriously." anText="so that you don’t have to." subText="never miss a due date with reminders to help you pay your bills on time, instant settlements mean you never wait for your payments to go through and statement analysis lets you know where your money goes, always." />
       </section>
 
-      <section className="bg-black text-white w-screen min-h-screen relative pt-[240px] px-[200px] pb-[250px] bg-cover flex justify-between" style={{backgroundImage: 'url("https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png")'}}>
+      <section className="hidden bg-black text-white w-screen min-h-screen relative pt-[240px] px-[200px] pb-[250px] bg-cover md:flex justify-between" style={{backgroundImage: 'url("https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png")'}}>
         <ScrollPage />
       </section>
 
+      <section className="md:hidden bg-black text-white w-screen min-h-screen relative py-[70px] px-10 flex flex-col"
+      style={{backgroundImage: 'url("https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png")'}}
+      >
+        <MobileScroll />
+      </section>
+
+      <section className="flex bg-right-top object-cover relative z-20 md:p-0 py-[70px] px-10" style={{backgroundImage: 'https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png'}}>
+        <Rating />
+      </section>
     </div>
   )
 }

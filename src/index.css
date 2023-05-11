@@ -17,5 +17,7 @@ body {
   box-sizing: border-box;
   background-color: var(--bg-black);
   color: var(--white);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
